@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".JumpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_name"
+                    android:text="用户名："
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="xxx"
+                    android:padding="8dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_id"
+                android:text="账号："
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/et_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:hint="123456"
+                android:padding="8dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_password"
+                    android:text="密码："
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:hint="xxxx"
+                    android:padding="8dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_jj"
+                android:text="简介："
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/et_jj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:hint="该用户还未写简介"
+                android:padding="8dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bn_back"
+                android:text="返回"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:textSize="15sp"
+                android:padding="15dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="30dp"
+                android:onClick="back"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

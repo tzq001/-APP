@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user"
+        android:src="@drawable/user"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bn_user"
+        android:text="个人信息"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:onClick="User"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:id="@+id/safe"
+            android:src="@drawable/safe"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bn_safe"
+            android:text="账户安全"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:id="@+id/brow"
+            android:src="@drawable/brow"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bn_brow"
+            android:text="浏览记录"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bnClose"
+        android:text="退出登录"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"/>
+
+</RelativeLayout>
